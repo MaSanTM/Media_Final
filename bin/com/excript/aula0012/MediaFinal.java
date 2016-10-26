@@ -6,36 +6,28 @@ public class MediaFinal {
 
 	public static void main (String[]args) {
 		
-		Scanner in = new Scanner(System.in);
-		
+		Scanner in = new Scanner(System.in);		
 		double nota1, nota2, nota3, nota4;
 		
 		System.out.println("Digite sua nota:");
-		nota1=in.nextDouble();
+		nota1 = in.nextDouble();
 		
 		System.out.println("Digite sua segunda nota:");
-		nota2=in.nextDouble();
+		nota2 = in.nextDouble();
 		
 		System.out.println("Digite sua terceira nota:");
-		nota3=in.nextDouble();
+		nota3 = in.nextDouble();
 		
 		System.out.println("Digite sua quarta nota:");
-		nota4=in.nextDouble();
+		nota4 = in.nextDouble();
 		
-		double soma = nota1+nota2+nota3+nota4;
-		soma = soma/4;
+		double soma = (nota1 + nota2 + nota3 + nota4) / 4;
 		
-		//System.out.println(soma);
-		
-		if(soma>=7){
-			System.out.println("Você foi aprovado. Sua média foi de:"+ soma);
+		//De acordo com o README, a nota mÃ­nima Ã© 7.5, portando:
+		if(soma >= 7.5){
+			System.out.println("VocÃª foi aprovado. Sua mÃ©dia foi de:"+ soma);
 		}else{
-			System.out.println("Você foi reprovado. Sua média foi de: "+ soma);
-			
-			
-		
-		}
-				
-	}
-	
+			System.out.println("VocÃª foi reprovado. Sua mÃ©dia foi de: "+ soma);	
+		}				
+	}	
 }
