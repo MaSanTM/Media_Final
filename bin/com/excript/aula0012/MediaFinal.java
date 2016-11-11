@@ -7,7 +7,10 @@ public class MediaFinal {
 	public static void main (String[]args) {
 		
 		Scanner in = new Scanner(System.in);		
-		double nota1, nota2, nota3, nota4;
+		double nota1, nota2, nota3, nota4, mediaminima;
+		
+		System.out.println("Digite sua média mínima:");
+		mediaminima = in.nextDouble();
 		
 		System.out.println("Digite sua nota:");
 		nota1 = in.nextDouble();
@@ -23,11 +26,10 @@ public class MediaFinal {
 		
 		double soma = (nota1 + nota2 + nota3 + nota4) / 4;
 		
-		//De acordo com o README, a nota mínima é 7.5, portando:
-		if(soma >= 7.5){
-			System.out.println("Você foi aprovado. Sua média foi de:"+ soma);
+		if(soma >= mediaminima){
+			System.out.println("Você foi aprovado. Sua média foi de:"+ soma + "/10");
 		}else{
-			System.out.println("Você foi reprovado. Sua média foi de: "+ soma);	
+			System.out.println("Você foi reprovado. Sua média foi de: "+ soma + "/10");	
 		}				
 	}	
 }
